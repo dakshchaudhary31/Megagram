@@ -3,7 +3,7 @@ import React from 'react'
 function Logo({width = "100px"}) {
   return (
     <div>
-      <img width={50} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3GxTt7v9YQxueun6GzuVewG3re2kTgiFs7g&s" alt="" />
+      <img width={50} src="https://www.logoai.com/oss/icons/2021/12/02/SU8HhT2n6tL-p-_.png" alt="logo" />
     </div>
   )
 }

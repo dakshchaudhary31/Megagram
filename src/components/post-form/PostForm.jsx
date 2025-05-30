@@ -71,7 +71,7 @@ export default function PostForm({ post }) {
     }, [watch, slugTransform, setValue]);
 
     return (
-        <form onSubmit={handleSubmit(submit)} className="flex flex-wrap w-full">
+        <form onSubmit={handleSubmit(submit)} className=" flex-wrap w-full">
             <div className="w-full md:w-2/3 px-2 mb-4 md:mb-0">
                 <Input
                     label="Title :"
@@ -88,13 +88,13 @@ export default function PostForm({ post }) {
                         setValue("slug", slugTransform(e.currentTarget.value), { shouldValidate: true });
                     }}
                 />
-                <RTE label="Content :" name="content" control={control} defaultValue={getValues("content")} />
+                
             </div>
-            <div className="w-full md:w-1/3 px-2">
+            <div className="w-full md:w-2/3 px-2">
                 <Input
                     label="Featured Image :"
                     type="file"
-                    className="mb-4"
+                    className="mb-4 "
                     accept="image/png, image/jpg, image/jpeg, image/gif"
                     {...register("image", { required: !post })}
                 />
@@ -110,11 +110,11 @@ export default function PostForm({ post }) {
                 <Select
                     label="Status"
                     options={["active", "inactive"]}
-                    className="mb-4 text-black bg-white"
+                    className="mb-4 text-gray-600"
                     {...register("status", { required: true })}
                 />
                 <Button type="submit" bgColor={post ? "bg-green-500" : undefined} className="w-full">
-                    {post ? "Update" : "Submit"}
+                    {post ? "Update" : "Post"}
                 </Button>
             </div>
         </form>
