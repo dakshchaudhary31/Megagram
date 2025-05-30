@@ -13,7 +13,7 @@ function Footer() {
             <div className="flex flex-col h-full justify-between">
               <div className="flex items-center gap-2 mb-4">
                 <Logo width="100px" />
-                <span className="text-lg font-semibold">MyBlog</span>
+                <span className="text-lg font-semibold">Megagram</span>
               </div>
               <p className="text-sm text-gray-500">
                 &copy; 2025. All rights reserved.

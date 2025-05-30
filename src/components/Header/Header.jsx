@@ -27,7 +27,7 @@ function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <Logo />
-            <span className="text-xl font-semibold tracking-wide">MyBlog</span>
+            <span className="text-xl font-semibold tracking-wide">Megagram</span>
           </Link>
 
           {/* Mobile Menu Button */}
